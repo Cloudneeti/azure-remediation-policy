@@ -1,0 +1,9 @@
+{
+    "name": "a41dd772-b06b-4690-8228-c2528db541fd",
+    "displayName": "Deploy latest version of TLS encryption on Mobile Apps",
+    "description": "Ensure Mobile apps is using the latest version of TLS encryption",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

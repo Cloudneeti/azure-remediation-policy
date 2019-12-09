@@ -1,0 +1,64 @@
+{
+  "if": {
+    "allOf": [
+      {
+        "field": "type",
+        "equals": "Microsoft.Web/sites"
+      },
+      {
+        "field": "kind",
+        "like": "*api"
+      }
+    ]
+  },
+  "then": {
+    "effect": "[parameters('effect')]",
+    "details": {
+      "type": "Microsoft.Web/sites/config",
+      "name": "[field('name')]",
+      "existenceCondition": {
+        "field": "Microsoft.Web/sites/config/web.minTlsVersion",
+        "equals": "1.2"
+      },
+      "roleDefinitionIds": [
+        "/providers/Microsoft.Authorization/roleDefinitions/de139f84-1756-47ae-9be6-808fbbe84772"
+      ],
+      "deployment": {
+        "properties": {
+          "mode": "incremental",
+          "template": {
+            "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+            "contentVersion": "1.0.0.0",
+            "parameters": {
+              "apiAppName": {
+                "type": "string"
+              },
+              "location": {
+                "type": "string"
+              }
+            },
+            "resources": [
+              {
+                "type": "Microsoft.Web/sites/config",
+                "apiVersion": "2018-11-01",
+                "name": "[concat(parameters('apiAppName'), '/web')]",
+                "location": "[parameters('location')]",
+                "properties": {
+                  "minTlsVersion": "1.2"
+                }
+              }
+            ]
+          },
+          "parameters": {
+            "apiAppName": {
+              "value": "[field('name')]"
+            },
+            "location": {
+              "value": "[field('location')]"
+            }
+          }
+        }
+      }
+    }
+  }
+}

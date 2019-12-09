@@ -1,0 +1,9 @@
+{
+    "name": "46d34666-1eda-40c1-a2ec-d6aa8e0fe5f8",
+    "displayName": "Deploy HTTPS on API Apps",
+    "description": "Ensure that HTTPS Only is enabled for API App Services",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

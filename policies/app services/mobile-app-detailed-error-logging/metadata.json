@@ -1,0 +1,9 @@
+{
+    "name": "b9d2264e-e532-4bf4-a466-f4b6a2b415db",
+    "displayName": "Enable Detailed Error Logging on Mobile Apps",
+    "description": "Ensure that Auditing and Monitoring is enabled for Mobile App",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

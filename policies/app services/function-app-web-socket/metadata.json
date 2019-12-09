@@ -1,0 +1,9 @@
+{
+    "name": "153872a2-9cf1-4492-b260-1d93790ef890",
+    "displayName": "Disable web sockets on Function Apps",
+    "description": "Ensure Web Sockets are disabled for Function Apps",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

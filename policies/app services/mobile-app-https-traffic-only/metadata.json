@@ -1,0 +1,9 @@
+{
+    "name": "2b1a8e70-f6fe-482e-a5cd-dc0007640df2",
+    "displayName": "Deploy HTTPS on Mobile Apps",
+    "description": "Ensure that HTTPS Only is enabled for Mobile App Services",
+    "mode": "all",
+    "metadata": {
+        "category": "App Service"
+    }
+}

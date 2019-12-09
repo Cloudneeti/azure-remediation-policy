@@ -1,0 +1,9 @@
+{
+    "name": "3d8b8209-e399-4417-9ca2-65a035814f61",
+    "displayName": "Disable web sockets on Mobile Apps",
+    "description": "Ensure Web Sockets are disabled for Mobile Apps",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

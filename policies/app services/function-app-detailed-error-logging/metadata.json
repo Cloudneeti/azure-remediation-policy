@@ -1,0 +1,9 @@
+{
+    "name": "6108b9c1-c50c-4f85-9762-a635bf9428a7",
+    "displayname": "Enable Detailed Error Logging on Function Apps",
+    "description": "Ensure that Auditing and Monitoring is enabled for Function App",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

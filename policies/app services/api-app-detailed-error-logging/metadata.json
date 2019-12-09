@@ -1,0 +1,9 @@
+{
+    "name": "b9bd6603-c76e-4ac6-8524-7c41d9a8751e",
+    "displayName": "Enable Detailed Error Logging on API Apps",
+    "description": "Ensure that Auditing and Monitoring is enabled for API App",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

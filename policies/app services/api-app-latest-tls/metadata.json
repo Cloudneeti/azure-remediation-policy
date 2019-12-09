@@ -1,0 +1,9 @@
+{
+    "name": "a4a00135-1e3a-49d6-a431-da48d8f06776",
+    "displayName": "Deploy latest version of TLS encryption on API Apps",
+    "description": "Ensure API apps is using the latest version of TLS encryption",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

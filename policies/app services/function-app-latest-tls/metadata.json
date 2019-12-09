@@ -1,0 +1,9 @@
+{
+    "name": "1a166f98-6a95-4d98-b3c1-48f093948387",
+    "displayName": "Deploy latest version of TLS encryption on Function Apps",
+    "description": "Ensure Function apps is using the latest version of TLS encryption",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "4ce9eec3-d0f3-4185-97cc-58dfd4871338",
+    "displayName": "Disable remote debugging on API Apps",
+    "description": "Ensure that remote debugging is turned off for API App",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

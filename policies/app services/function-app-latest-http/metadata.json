@@ -1,0 +1,9 @@
+{
+    "name": "6f280dd0-e633-44dd-bb10-780b1be04c53",
+    "displayName": "Deploy latest version of HTTP on Function Apps",
+    "description": "Ensure Function app is using the latest version of HTTP",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

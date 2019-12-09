@@ -1,0 +1,9 @@
+{
+    "name": "97967cca-a890-424a-9c5a-e9b56f5904bf",
+    "displayName": "Disable remote debugging on Function Apps",
+    "description": "Ensure that remote debugging is turned off for Function App",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "5fb1d1a8-c48e-4d2b-b655-52b9aade4a90",
+    "displayName": "Deploy HTTPS on Function Apps",
+    "description": "Ensure that HTTPS Only is enabled for Function Apps",
+    "mode": "all",
+    "metadata": {
+        "category": "App Service"
+    }
+}

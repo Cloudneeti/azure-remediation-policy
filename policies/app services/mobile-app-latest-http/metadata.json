@@ -1,0 +1,9 @@
+{
+    "name": "0e303cce-1292-49fe-87f0-f10c3f9243dc",
+    "displayName": "Deploy latest version of HTTP on Mobile Apps",
+    "description": "Ensure Mobile app is using the latest version of HTTP",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

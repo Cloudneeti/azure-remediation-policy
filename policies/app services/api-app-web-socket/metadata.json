@@ -1,0 +1,9 @@
+{
+    "name": "9f841b85-7927-44ba-8209-fc07d16490d7",
+    "displayName": "Disable web sockets on API Apps",
+    "description": "Ensure Web Sockets are disabled for API Apps",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

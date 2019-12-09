@@ -1,0 +1,9 @@
+{
+    "name": "8acdb625-6a83-4000-8d86-813da402d496",
+    "displayName": "Enable Detailed Error Logging on Web Apps",
+    "description": "Ensure that Auditing and Monitoring is enabled for App Service",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

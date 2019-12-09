@@ -1,0 +1,9 @@
+{
+    "name": "356c16f6-6bdc-4ce6-8a52-c6c10ae2504d",
+    "displayName": "Deploy latest version of TLS encryption on Web Apps",
+    "description": "Ensure Web apps is using the latest version of TLS encryption",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

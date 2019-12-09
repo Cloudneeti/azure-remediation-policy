@@ -1,0 +1,9 @@
+{
+	"name": "58eca285-e73a-48d0-918c-c2cf79e1c163",
+	"displayName": "Deploy 'Geo-redundant' replication on Storage Account", 
+	"description": "Ensure that 'Geo-redundant' is enabled for Azure Storage",
+	"mode": "all",
+	"metadata": {
+	  "category": "Storage"
+	}
+}

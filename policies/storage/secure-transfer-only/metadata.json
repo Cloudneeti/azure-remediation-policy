@@ -1,0 +1,9 @@
+{
+	"name": "a9884002-c875-4400-a5c0-7f7d90602d5a",
+	"displayName": "Deploy HTTPS on for Storage Account", 
+	"description": "Ensure that 'Secure transfer required' is 'Enabled' for Storage Account",
+	"mode": "all",
+	"metadata": {
+	  "category": "Storage"
+	}
+}

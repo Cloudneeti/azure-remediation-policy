@@ -1,0 +1,9 @@
+{
+    "name": "4c7c737a-ec81-4497-8703-f1ce520d8c0b",
+    "displayName": "Disable web sockets on App services",
+    "description": "Ensure Web Sockets are disabled for App services",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

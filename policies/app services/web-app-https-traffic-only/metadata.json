@@ -1,0 +1,9 @@
+{
+    "name": "fc52284d-110a-4849-aa1e-12d5cf750b2e",
+    "displayName": "Deploy HTTPS on web apps",
+    "description": "Ensure web app redirects all HTTP traffic to HTTPS in Azure App Service",
+    "mode": "all",
+    "metadata": {
+        "category": "App Service"
+    }
+}

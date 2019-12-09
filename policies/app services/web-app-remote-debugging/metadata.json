@@ -1,0 +1,9 @@
+{
+    "name": "2d7184e7-7b50-4b13-9333-d5e8d51b9efd",
+    "displayName": "Disable remote debugging on Web Apps",
+    "description": "Ensure that remote debugging is turned off for Web App",
+    "mode": "All",
+    "metadata": {
+        "category": "App Service"
+    }
+}

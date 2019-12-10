@@ -67,22 +67,22 @@ $policyDir = "$PSScriptRoot\policies"
 $policyDefinitionCategories = Get-ChildItem -Path $policyDir
 
 foreach ($category in $policyDefinitionCategories){
-    Write-Host "Inititing policy definition creation from $category category" -ForegroundColor Magenta
-    $definitions = Get-ChildItem -Path "$policyDir\$category" | where psiscontainer
+    Write-Host "Inititing policy definition creation from category:"  $category.Name ""  -ForegroundColor Magenta
+    $definitions = Get-ChildItem -Path "$category" | where psiscontainer
 
     ForEach($definition in $definitions) {
-        
-        $definitionPath = "$policyDir\$category\$definition"
+        $definitionPath = "$definition"
         $metaDataFilePath = "$definitionPath\metadata.json"
         $definitionMetaData = Get-Content -Raw -Path $metaDataFilePath | ConvertFrom-Json
-
         write-host "Creating policy definition for policy:" $definitionMetaData.description "" -ForegroundColor Yellow
+        $metadata = $definitionMetaData.metadata | ConvertTo-Json
 
         Try{
             New-AzPolicyDefinition -Name $definitionMetaData.name `
             -DisplayName $definitionMetaData.displayname `
             -description $definitionMetaData.description `
             -Mode $definitionMetaData.mode `
+            -Metadata $metadata `
             -Policy "$definitionPath\azurepolicy.rules.json" `
             -Parameter "$definitionPath\azurepolicy.parameters.json"
         }
@@ -91,7 +91,7 @@ foreach ($category in $policyDefinitionCategories){
             Write-Output $_
         }
     }
-    Write-Host "Azure policy created successfully for $category category" -ForegroundColor Cyan
+    Write-Host "Azure policy created successfully for category:" $category.Name ""-ForegroundColor Green
 }
 
 Write-Host "Script execution completed."

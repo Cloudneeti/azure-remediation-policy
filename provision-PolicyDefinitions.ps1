@@ -66,12 +66,13 @@ write-host "Getting all the definition category"
 $policyDir = "$PSScriptRoot\policies"
 $policyDefinitionCategories = Get-ChildItem -Path $policyDir
 
-foreach ($category in $policyDefinitionCategories){
-    Write-Host "Inititing policy definition creation from category:"  $category.Name ""  -ForegroundColor Magenta
-    $definitions = Get-ChildItem -Path "$category" | where psiscontainer
+foreach ($category in $policyDefinitionCategories.Name){
+    Write-Host "Inititing policy definition creation from category:"  $category ""  -ForegroundColor Magenta
 
+    $definitions = Get-ChildItem -Path "$policyDir\$category" 
     ForEach($definition in $definitions) {
-        $definitionPath = "$definition"
+        $definitionName = $definition.Name
+        $definitionPath = "$policyDir\$category\$definitionName"
         $metaDataFilePath = "$definitionPath\metadata.json"
         $definitionMetaData = Get-Content -Raw -Path $metaDataFilePath | ConvertFrom-Json
         write-host "Creating policy definition for policy:" $definitionMetaData.description "" -ForegroundColor Yellow

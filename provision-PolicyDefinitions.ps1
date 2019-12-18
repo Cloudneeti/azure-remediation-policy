@@ -88,8 +88,7 @@ foreach ($category in $policyDefinitionCategories.Name){
             -Parameter "$definitionPath\azurepolicy.parameters.json"
         }
         catch [Exception]{
-            Write-Host "Failed to create policy definition for policy:" $definitionMetaData.displayname
-            Write-Output $_
+            Write-Error $_
         }
     }
     Write-Host "Azure policy created successfully for category:" $category.Name ""-ForegroundColor Green

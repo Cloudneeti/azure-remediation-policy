@@ -44,12 +44,12 @@ Follow below steps to create policy definitions inside Azure subscription
 
 	`# cd azure-remediation-policy`
 
+	 **Note:** If you are using CloudShell, Run `cd $user` to switch user directory before executing above command 
+
 3. Provision policy definition in the subscription
 
 	 `# .\provision-PolicyDefinitions.ps1 -SubscriptionId <Subscription Id>`
 	 
-	 **Note:** Run `cd $user` to switch user directory before executing above command if you are using CloudShell
-
 TODO: Create policy definitions at the Azure management group level, so that they can be shared across multiple subscriptions.
 
 ## Remediation Policies Supported

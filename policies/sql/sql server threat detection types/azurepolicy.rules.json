@@ -17,7 +17,7 @@
         "equals": ""
       },
       "roleDefinitionIds": [
-        "/providers/Microsoft.Authorization/roleDefinitions/6d8ee4ec-f05a-4a1d-8b00-a9b17e38b437"
+        "/providers/Microsoft.Authorization/roleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635"
       ],
       "deployment": {
         "properties": {
@@ -28,6 +28,9 @@
             "parameters": {
               "SQLServerName": {
                 "type": "string"
+              },
+              "location": {
+                "type": "string"
               }
             },
             "resources": [
@@ -35,6 +38,7 @@
                 "type": "Microsoft.Sql/servers/securityAlertPolicies",
                 "apiVersion": "2017-03-01-preview",
                 "name": "[concat(parameters('SQLServerName'), '/Default')]",
+                "location": "[parameters('location')]",
                 "properties": {
                   "state": "Enabled",
                   "disabledAlerts": []
@@ -45,6 +49,9 @@
           "parameters": {
             "SQLServerName": {
               "value": "[field('name')]"
+            },
+            "location": {
+              "value": "[field('location')]"
             }
           }
         }

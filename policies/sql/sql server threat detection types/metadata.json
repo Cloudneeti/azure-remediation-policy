@@ -1,0 +1,9 @@
+{
+    "name": "be96ac95-0f17-444c-8c00-f22ae74c1d7c",
+    "displayName": "Ensure that 'Threat Detection types' is set to 'All' for SQL Server",
+    "description": "Ensure that 'Threat Detection types' is set to 'All' for SQL Server",
+    "mode": "All",
+    "metadata": {
+        "category": "SQL Server"
+    }
+}

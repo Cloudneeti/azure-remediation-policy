@@ -1,9 +1,0 @@
-{
-    "name": "c248d447-0f6d-4782-89cd-81c59511b05c",
-    "displayName": "Deploy latest version of HTTP on API Apps",
-    "description": "Ensure API app is using the latest version of HTTP",
-    "mode": "All",
-    "metadata": {
-        "category": "App Service"
-    }
-}

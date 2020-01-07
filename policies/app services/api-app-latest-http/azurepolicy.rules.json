@@ -14,10 +14,10 @@
   "then": {
     "effect": "[parameters('effect')]",
     "details": {
-      "type": "Microsoft.Web/sites",
+      "type": "Microsoft.Web/sites/config",
       "name": "[field('name')]",
       "existenceCondition": {
-        "field": "Microsoft.Web/sites/httpsOnly",
+        "field": "Microsoft.Web/sites/config/web.http20Enabled",
         "equals": "true"
       },
       "roleDefinitionIds": [
@@ -35,20 +35,16 @@
               },
               "location": {
                 "type": "string"
-              },
-              "tags":{
-                "type":"object"
               }
             },
             "resources": [
               {
-                "type": "Microsoft.Web/sites",
-                "apiVersion": "2019-08-01",
-                "name": "[parameters('apiAppName')]",
+                "type": "Microsoft.Web/sites/config",
+                "apiVersion": "2018-11-01",
+                "name": "[concat(parameters('apiAppName'), '/web')]",
                 "location": "[parameters('location')]",
-                "tags":"[parameters('tags')]",
                 "properties": {
-                  "httpsOnly": true
+                  "http20Enabled": true
                 }
               }
             ]
@@ -59,9 +55,6 @@
             },
             "location": {
               "value": "[field('location')]"
-            },
-            "tags":{
-              "value":"[field('tags')]"
             }
           }
         }
